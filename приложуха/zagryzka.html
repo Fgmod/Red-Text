@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Red text</title>
+    <link rel="stylesheet" href="./text().css">
+<style>
+    #saveButton{
+        margin-left:400px;
+    }
+     .tests{
+        margin-left: 100px;
+        
+        display: inline-block;
+    }
+    .tests1{
+        margin-left: 100px;
+        
+        display: inline-block;
+    } 
+    .tests2{
+        margin-left: 100px;
+        
+        display: inline-block;
+    }
+    .texts{
+        margin-left:450px;
+        width: 500px;
+        height: 300px;
+        margin-top: 0;
+        padding: 0;
+    }
+    .te{
+        margin-left:450px;
+    }
+</style>
+</head>
+<body>
+<p>Red text</p>
+<button onclick="window.location.href = 'opp.html';">На главную страницу</button>
+    <h1>Загрузка своего текста</h1>
+<div class="reading">
+    <label for="text" class="te">Вставьте текст:</label>
+    <textarea class="texts" id="tex" placeholder="Вставьте текст"></textarea>
+</div>
+
+
+
+
+<div class="tests">
+    <label for="question">Вопрос 1:</label>
+    <input type="text" id="question" placeholder="Введите вопрос"><br>
+    <label for="answer">Ответ 1:</label>
+    <textarea id="answer" placeholder="Введите ответ"></textarea><br>
+    <label for="answer">Варианты ответов:</label>
+    <textarea id="answers" placeholder="Введите ответ"></textarea><br>
+</div>
+<div class="tests1">
+    <label for="question">Вопрос 2:</label>
+    <input type="text" id="b" placeholder="Введите вопрос"><br>
+    <label for="answer">Ответ 2:</label>
+    <textarea id="c" placeholder="Введите ответ"></textarea><br>
+    <label for="answer">Варианты ответов:</label>
+    <textarea id="d" placeholder="Введите ответ"></textarea><br>
+    
+</div>
+
+<div class="tests2">
+    <label for="question">Вопрос 3:</label>
+    <input type="text" id="e" placeholder="Введите вопрос"><br>
+    <label for="answer">Ответ 3:</label>
+    <textarea id="f" placeholder="Введите ответ"></textarea><br>
+    <label for="answer">Варианты ответов:</label>
+    <textarea id="g" placeholder="Введите ответ"></textarea><br>
+</div>
+<button id="saveButton">Сохранить</button>
+    <div id="output">
+        <h2>Сохраненные вопросы и ответы</h2>
+        <ul id="savedQuestions">
+            <!-- Здесь будут отображаться сохраненные вопросы -->
+        </ul>
+    </div>
+
+ <script src="./zagryzka.js"></script>
+</body>
+</html>

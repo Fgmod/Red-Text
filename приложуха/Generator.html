@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Red text</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./text().css" rel="stylesheet">
+        <style>
+    #saveButton{
+        margin-left:675px;
+    }
+     .tests{
+        margin-left: 100px;
+        
+        display: inline-block;
+    }
+    .tests1{
+        margin-left: 100px;
+        
+        display: inline-block;
+    } 
+    .tests2{
+        margin-left: 100px;
+        
+        display: inline-block;
+    }
+    .texts{
+        margin-left:450px;
+        width: 500px;
+        height: 300px;
+        margin-top: 0;
+        padding: 0;
+    }
+    .te{
+        margin-left:450px;
+    }
+</style>
+    </head>
+    <body>
+<p>Red text</p>
+<button onclick="window.location.href = 'opp.html';">На главную страницу</button>
+    <h1>Загрузка своего текста</h1>
+<div class="reading">
+    <label for="text" class="te">Вставьте текст:</label>
+    <textarea class="texts" id="tex" placeholder="Вставьте текст"></textarea>
+    <button id="saveButton">Сохранить</button>
+    <div id="output">
+        <ul id="savedQuestions">
+            <!-- Здесь будут отображаться сохраненные вопросы -->
+        </ul>
+    </div>
+</div>
+
+
+
+   <h1>Тест по произведению</h1>
+   <div id="question"></div>
+    
+    <input type="text" id="answerInput" style="display: none;">
+    
+    <button id="startButton" onclick="startTest()">Начать тест</button>
+    <button id="nextButton" onclick="nextQuestion()" style="display: none;">Следующий вопрос</button>
+    
+    
+    <script src="./Generator.js"></script>
+
+
+    </body>
+</html>

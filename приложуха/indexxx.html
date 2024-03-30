@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Red text</title>
+  <link rel="stylesheet" href="./text().css">
+<style>
+.vopros1{
+  margin-left:50px;
+  
+}
+.vopros2{
+  margin-left:50px;
+  display: flexbox;
+}
+.vopros3{
+  margin-left:50px;
+  display: flexbox;
+}
+h2{
+  margin-left:50px;
+}
+.otvet1{
+  display: inline;
+  margin-left: 100px;
+}
+.otvet1.1{
+  display: inline;
+  margin-left: 500px;
+}
+
+
+.otvet2{
+  display: inline;
+  margin-left: 100px;
+  
+}
+.otvet3{
+  display: inline;
+  margin-left: 100px;
+  
+}
+
+  
+</style>
+</head>
+<body>
+<p>Red text</p>
+ <button onclick="window.location.href = 'opp.html';">На главную страницу</button>
+  <h1>Загрузка своего текста</h1>
+  
+  <form id="reading-assessment-form">
+    <label for="text">Вставьте текст:</label>
+    <textarea class="text"></textarea>
+    <br>
+    <button type="submit">Сохранить</button>
+    <h2>Вставьте вопросы и ответы</h2>
+    <div class = "otvet1.1"> <textarea cols="20" rows="2" id="myTextarea"></textarea> </div>
+   <div class = "otvet1.1"> <textarea cols="20" rows="2" id="myTextarea"></textarea> </div>
+<div class = "vopros1">
+    <textarea cols="15" rows="10" id="myTextarea"></textarea>
+   <div class = "otvet1"> <textarea cols="20" rows="2" id="myTextarea"></textarea> </div>
+   
+</div>
+<div class = "vopros2">
+    <textarea cols="15" rows="10" id="myTextarea"></textarea>
+    <div class = "otvet2"> <textarea cols="20" rows="5" id="myTextarea"></textarea> </div>
+</div>
+<div class = "vopros3">
+    <textarea cols="15" rows="10" id="myTextarea"></textarea>
+    <div class = "otvet3"> <textarea cols="20" rows="5" id="myTextarea"></textarea> </div>
+</div>
+
+<button id="downloadBtn">Сохранить вопросы и ответы</button>
+    
+  </form>
+  
+  <div id="result"></div>
+
+  <script src="./indexxx.js"></script>
+</body>
+</html>

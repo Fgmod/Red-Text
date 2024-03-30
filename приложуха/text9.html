@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red text</title>
+    <link rel="stylesheet" href="./text().css">
+    
+     <style>
+     iframe{
+    width: 1100px;
+    height: 1650px;
+    background-color: bisque;
+    overflow-y: hidden;
+    margin-top: 5px;
+    margin-left: 200px;
+}
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+           
+        }
+        
+    </style>
+    
+</head>
+<body>
+<div class="stars">
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+</div>
+<p>Red text</p>
+    <button onclick="window.location.href = 'opp.html';">На главную страницу</button>
+    <h1>Тайное становится явным </h1>
+    <iframe scrolling="no" src="C:\Users\User\Desktop\Тайное становится явным.txt"></iframe>
+
+   <h1>Тест по произведению</h1>
+   <button id="startButton">Начать тест</button>
+   <div id="questionContainer" style="display:none;">
+        <h2 id="questionText"></h2>
+        <label>
+            <input type="radio" name="answer" answer="a"> Вариант A
+        </label>
+        <label>
+            <input type="radio" name="answer" answer="b"> Вариант B
+        </label>
+        <label>
+            <input type="radio" name="answer" answer="c"> Вариант C
+        </label>
+    </div>
+    <button id="nextButton" style="display: none;">Следующий вопрос</button>
+    <div id="resultContainer" style="display: none;">
+        <h2>Итоги</h2>
+        <p id="resultText"></p>
+    </div>
+    <script src="./text9.js"></script>
+
+
+</body>
+</html>

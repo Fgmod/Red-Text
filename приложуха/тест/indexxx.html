@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Red text</title>
+  <link rel="stylesheet" href="./styleee.css">
+</head>
+<body>
+  <h1>Оценка способностей к чтению и пониманию текста</h1>
+  
+  <form id="reading-assessment-form">
+    <label for="text">Вставьте текст для оценки:</label>
+    <textarea id="text"></textarea>
+    <br>
+    <button type="submit">Оценить</button>
+  </form>
+  
+  <div id="result"></div>
+  
+  <script>
+    // Функция для оценки способностей к чтению и пониманию текста
+    function assessReading(text) {
+      // Здесь можно добавить свой код для оценки текста с использованием методов психологии и лингвистики
+      
+      // Пример простой оценки по количеству слов в тексте
+      var wordCount = text.split(' ').length;
+      
+      if (wordCount < 100) {
+        return 'Низкий уровень чтения и понимания текста';
+      } else if (wordCount < 300) {
+        return 'Средний уровень чтения и понимания текста';
+      } else {
+        return 'Высокий уровень чтения и понимания текста';
+      }
+    }
+    
+    // Обработчик отправки формы
+    document.getElementById('reading-assessment-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+      var text = document.getElementById('text').value;
+      var result = assessReading(text);
+      
+      document.getElementById('result').textContent = 'Результат: ' + result;
+    });
+  </script>
+</body>
+</html>
